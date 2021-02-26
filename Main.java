@@ -12,14 +12,14 @@ class Main {
     static boolean chickenWings(int wings, int number) {
       Scanner scan = new Scanner(System.in);
       if (number <= wings) {
-        System.out.println("You have ordered " + number + " sauces. ");
+        System.out.println("You have ordered " + number + " sauces. "); // says how many sauces youve ordered
         System.out.println("What sauce would you like with your wings?");;
         String sauce = scan.next();
-        number ++;
+        number ++; //counts wings
         return chickenWings(wings, number);
       } else {
         System.out.println("Come and get your wings!");
-
+        
         return false;
       }
     }
